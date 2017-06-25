@@ -115,22 +115,28 @@ mutation createDiscountMutation($data: DiscountInput!) {
 }
 ```
 
-Expected result:
+## Attaching Location to Discount
 
-```json
-{
-  "data": {
-    "createDiscount": {
-      "id": "594faf8e4e8982407ae3a183",
-      "created": "Sun Jun 25 2017 14:41:50 GMT+0200 (CEST)"
-    }
+```graphql
+mutation createLocationMutation($discount: ID!, $data: LocationInput!) {
+  createLocation(discount: $discount, data: $data) {
+    id
+    created
   }
 }
 ```
 
-## Attaching Location to Discount
-
-.
+```json
+{
+  "discount": "594faf8e4e8982407ae3a183",
+  "data": {
+    "street": "Street",
+    "city": "City",
+    "zip": "123",
+    "country": "SK"
+  }
+}
+```
 
 ## Updating Discount
 
