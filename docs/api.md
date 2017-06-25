@@ -132,7 +132,7 @@ mutation updateDiscountMutation($id: ID!, $data: DiscountInput!) {
   "id": "594faf8e4e8982407ae3a183",
   "data": {
     "name": "Updated Name"
- }
+  }
 }
 ```
 
