@@ -212,3 +212,16 @@ mutation deleteLocationMutation($id: ID!) {
   "id": "5950b74909daba787909facf"
 }
 ```
+
+## Possible Tags and Categories
+
+You can find out about the possible Categories and Tags by querying the following:
+
+```graphql
+{
+  categories {
+    id
+  }
+  tags
+}
+```
