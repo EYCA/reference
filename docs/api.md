@@ -139,7 +139,19 @@ mutation updateDiscountMutation($id: ID!, $data: DiscountInput!) {
 
 ## Removing Discount
 
-TODO.
+Removes discount and all its locations.
+
+```graphql
+mutation deleteDiscountMutation($id:ID!) {
+  deleteDiscount(id: $id)
+}
+```
+
+```json
+{
+  "id": "594faf8e4e8982407ae3a183"
+}
+```
 
 ## Attaching Location to a Discount
 
@@ -187,4 +199,16 @@ mutation updateLocationMutation($id: ID!, $data: LocationInput!) {
 
 ## Removing Location
 
-TODO.
+Removes a particular location attached to a discount. Main discount data keeps unchanged.
+
+```graphql
+mutation deleteLocationMutation($id: ID!) {
+  deleteLocation(id: $id)
+}
+```
+
+```json
+{
+  "id": "5950b74909daba787909facf"
+}
+```
