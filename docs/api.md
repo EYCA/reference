@@ -1,6 +1,6 @@
 # Introduction
 
-The EYCA API is build on GraphQL protocol (http://graphql.org/).
+The EYCA API is build on GraphQL protocol (http://graphql.org/). You can learn about the GraphQL and how it works in the Learn section (http://graphql.org/learn/) of the GraphQL website.
 
 ## Base URL
 
