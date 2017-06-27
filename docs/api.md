@@ -89,6 +89,8 @@ Query for info about your account.
 }
 ```
 
+You can adjust the query to fetch data you need. You can find all the fields and queries possible in the Console Documentation.
+
 # Mutations
 
 Mutations are used to manipulate data on the server.
@@ -221,6 +223,7 @@ You can find out about the possible Categories and Tags by querying the followin
 {
   categories {
     id
+    name
   }
   tags
 }
