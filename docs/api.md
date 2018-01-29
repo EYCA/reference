@@ -22,10 +22,10 @@ To execute a simple query `{ hello }`.
 
 ```sh
 curl -X POST \
--H "Content-Type: application/json" \
--H "Api-Key: [your-api-key]" \
--d '{"query": "{ hello }"}' \
-http://dev.eyca.org/api
+  -H "Content-Type: application/json" \
+  -H "Api-Key: [your-api-key]" \
+  -d '{"query": "{ hello }"}' \
+  http://dev.eyca.org/api
 ```
 
 Replace `[your-api-key]` with a valid key.
